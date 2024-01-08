@@ -1,0 +1,2 @@
+# SolarSquared
+Website for SolarSquared 
