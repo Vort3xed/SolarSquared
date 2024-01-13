@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';

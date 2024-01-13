@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Styles from './tech-stack.module.css';

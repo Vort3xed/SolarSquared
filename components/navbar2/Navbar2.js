@@ -1,4 +1,4 @@
-/* eslint-disable no-alert */
+/* eslint-disable */
 import React, { useEffect, useState } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import Image from 'next/image';

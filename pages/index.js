@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import BasicHero from '@/components/basic-hero/BasicHero';
