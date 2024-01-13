@@ -1,0 +1,67 @@
+.active.item > .title {
+  border-bottom-color: #ffff;
+}
+
+.title {
+  @apply flex w-full justify-between items-center py-3 pr-1 pl-0 cursor-pointer;
+  border-bottom: 1px solid #bababa3d;
+  @apply sm:py-2 sm:px-0;
+}
+
+.title:hover {
+  outline: none;
+  transition: border 0.28s;
+}
+
+.title > svg {
+  transition: all 0.28s;
+}
+
+.body {
+  @apply py-3 pr-1 pl-0 hidden border-none;
+  @apply sm:py-2;
+}
+
+.body * {
+  color: rgb(196, 196, 196);
+}
+
+.body ul {
+  @apply list-disc pl-6;
+}
+
+.body a {
+  @apply text-blue;
+}
+
+.body a:hover {
+  border-bottom: 1px solid;
+  @apply border-b-blue;
+}
+
+.black-gradient {
+  stop-color: black;
+  stop-opacity: 1;
+}
+
+.orange-gradient {
+  stop-color: #FFA500; /* Start color */
+  stop-opacity: 1;
+}
+
+.orange-gradient-stop2 {
+  stop-color: #FF8C00; /* Middle color */
+  stop-opacity: 1;
+}
+
+.orange-gradient-stop3 {
+  stop-color: #FF6347; /* End color */
+  stop-opacity: 1;
+}
+
+.blobImage {
+  position: absolute;
+  top: 100px; /* Adjust the desired vertical position */
+  left: 200px; /* Adjust the desired horizontal position */
+  opacity: 0.2;
+}

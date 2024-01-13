@@ -1,0 +1,19 @@
+/* ButtonV2.module.css */
+
+
+.rippleButton {
+    @apply text-lg inline-block overflow-hidden relative rounded-full px-5 py-[7px] cursor-pointer;
+    background-color: #64CCC5;
+    color: #fff;
+    transition: background-color 1s;
+  }
+  
+  .rippleButton:hover {
+    background-color: #EEEEEE;
+  }
+  
+  .rippleButton:focus,
+  .rippleButton:active {
+    background-color: rgb(255, 255, 255);
+    transition: none;
+  }

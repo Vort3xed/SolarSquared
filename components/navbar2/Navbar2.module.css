@@ -1,0 +1,38 @@
+.navbar {
+  @apply sticky top-0 left-0 right-0 w-full py-2 px-20 flex justify-between items-center overflow-hidden z-[100];
+  @apply 2xl:px-10;
+  @apply xl:px-8;
+  @apply sm:px-6;
+  @apply xs:px-3;
+  background-color: #efae04ff;
+  backdrop-filter: blur(8px);
+  /* background-image: linear-gradient(to top left,hsl(180, 90%, 55%),hsl(219, 69%, 43%)); */
+}
+
+.navTitle {
+  transition: all 400ms ease-in-out;
+  color: #ffffff;
+  @apply ml-6 text-xl xl:hidden;
+}
+
+.navbarList {
+  @apply flex gap-12 justify-evenly items-center text-primary-light;
+  transition: all 300ms ease-in-out;
+  @apply 2xl:gap-10;
+  @apply xl:gap-4;
+  @apply lg:hidden;
+}
+
+.navbarList > .navLink {
+  @apply font-semibold text-base xl:mx-5;
+  transition: all 300ms ease-in-out;
+  width: fit-content;
+}
+.navbarList > .navLink:hover {
+  @apply font-medium;
+  color: #ffffff;
+}
+
+.humburgerMenu {
+  @apply cursor-pointer hidden lg:block;
+}

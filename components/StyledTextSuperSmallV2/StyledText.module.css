@@ -1,0 +1,39 @@
+/* Updated CSS with Smaller Text Size */
+.headingText {
+  @apply text-5xl text-primary-light font-extrabold leading-none sm:text-4xl xs:text-3xl;
+}
+/* .headingText {
+  @apply text-7xl text-primary-light font-semibold leading-none sm:text-6xl xs:text-5xl;
+} */
+
+/* Rest of your existing code */
+.heading {
+  --bg-size: 400%;
+  --color-one: hsl(61, 100%, 50%);
+  --color-two: hsl(39, 100%, 47%);
+  /* font-size: clamp(4rem, 30vmin, 9rem); */
+  /* font-size: clamp(2rem, 20vmin, 6rem); */
+  font-size: calc(1em + 4vw);
+  /* font-weight: bold; */
+  background: linear-gradient(
+    90deg,
+    var(--color-one),
+    var(--color-two),
+    var(--color-one)
+  ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .heading {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
