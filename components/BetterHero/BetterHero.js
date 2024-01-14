@@ -69,13 +69,17 @@ export default function BetterHero() {
                             <div className="max-w-3xl mx-auto">
                                 <p className="text-xl text-gray-600 mb-8 mt-2" data-aos="zoom-y-out" data-aos-delay="300">Solving the world&apos;s energy crisis, one crystal at a time.</p>
                                 <div className="max-w-xs mx-auto sm:justify-center" data-aos="zoom-y-out" data-aos-delay="600">
+                                    <a href='/about'>
                                     <ButtonV2>
                                         <span className="flex items-center"> About Us </span>
                                     </ButtonV2>
+                                    </a>
                                     &nbsp;
+                                    <a href='/product'>
                                     <ButtonV2>
-                                            <span className="flex items-center"> Join </span>
+                                            <span className="flex items-center"> Product </span>
                                     </ButtonV2>
+                                    </a>
                                 </div>
                             </div>
                         </div>

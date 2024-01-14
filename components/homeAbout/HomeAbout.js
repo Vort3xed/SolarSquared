@@ -48,14 +48,14 @@ function HomeAbout() {
       <StyledTextV2Small text="About Us"/>
       <div className="my-6 py-2">
         <p className="text-xl w-10/12 md:w-full md:text-lg sm:text-base">
-          We are AVE, a company with a vision to solve the current climate crisis with innovative solutions. 
+          We are AVE, a 3 person company with a vision to solve the current climate crisis with innovative solutions. 
         </p>
       </div>
       
-      <Link href="/about">
+      <Link href="/teams">
         <a className="flex w-[fit-content] rounded-full">
           <ButtonV2 data-aos="zoom-y-out" data-aos-delay="300">
-            <span className="z-50 block">View our Product</span>
+            <span className="z-50 block">Our Team</span>
           </ButtonV2>
         </a>
       </Link>

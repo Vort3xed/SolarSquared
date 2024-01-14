@@ -48,6 +48,11 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

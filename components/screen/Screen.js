@@ -22,7 +22,7 @@ function Screen({ children }) {
     <main id="overlayScreen" className="h-full relative">
       <div className="cursor" />
       <Navbar2 />
-      <SocialsBar />
+      {/* <SocialsBar /> */}
       {children}
       <Footer />
     </main>

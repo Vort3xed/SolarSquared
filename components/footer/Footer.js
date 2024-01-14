@@ -33,14 +33,14 @@ function Footer() {
           <div className="mb-3 flex flex-col">
             <h3 className="text-2xl">Email</h3>
             <h4 className="text-lg font-extralight">
-              <a href="mailto:contact@stempotd.org">contact@stempotd.org</a>
+              <a href="mailto:ave.engineering1@gmail.com">ave.engineering1@gmail.com</a>
             </h4>
           </div>
           <div className="my-3 flex flex-col">
             <h3 className="text-2xl">Social Media</h3>
             <h4 className="text-lg font-extralight">
-              <a href="https://www.instagram.com/stempotd/" target="_blank" rel='noreferrer'>www.instagram.com/stempotd/</a> <br />
-              <a href="https://github.com/stempotd" target="_blank" rel='noreferrer'>github.com/stempotd</a> <br />
+              <a href="https://www.instagram.com/avengineering/" target="_blank" rel='noreferrer'>www.instagram.com/avengineering/</a> <br />
+              <a href="https://github.com/avengineering" target="_blank" rel='noreferrer'>github.com/avengineering</a> <br />
             </h4>
           </div>
         </div>
@@ -85,19 +85,7 @@ function Footer() {
         <h6 className="flex items-center">
           Crafted with&nbsp;<span className="text-2xl">♥</span>&nbsp;by Agneya Tharun
         </h6>
-        {isDesktop ? (
-          <div className="absolute opacity-70 transform translate-x-2/4 -translate-y-1/4 pointer-events-none" aria-hidden="true">
-            <Image
-              className={Styles.blobImage}
-              height="1000%"
-              width="1000%"
-              src="/betterblueblob.png"
-              alt="test"
-            />
-          </div>
-        ) : (
-          <div></div>
-        )}
+        
       </div>
     </footer>
   );

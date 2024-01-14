@@ -9,27 +9,27 @@ import styles from './blob.module.css'
 function About() {
   const [isDesktop, setDesktop] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
+    if (window.innerWidth > 1300) {
+      setDesktop(true);
+    } else {
+      setDesktop(false);
+    }
+
+    const updateMedia = () => {
       if (window.innerWidth > 1300) {
         setDesktop(true);
       } else {
         setDesktop(false);
       }
-  
-      const updateMedia = () => {
-        if (window.innerWidth > 1300) {
-          setDesktop(true);
-        } else {
-          setDesktop(false);
-        }
-      };
-      window.addEventListener('resize', updateMedia);
-      return () => window.removeEventListener('resize', updateMedia);
-    }, []);
-  
+    };
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
+  }, []);
+
   return (
     <Screen>
-      
+
       <Head>
         <title>About Us</title>
         <meta
@@ -44,50 +44,38 @@ function About() {
       </Head>
       <section className="container-70 pt-28 md:pt-16 sm:pt-12">
         <div className="mt-12 mb-6 sm:mt-8 sm:mb-4">
-          <StyledTextV2Small text="About Us"/>
+          <StyledTextV2Small text="About Us" />
           <div className="mt-6">
-            <div className="absolute opacity-70 transform -translate-x-1/4 -translate-y-1/2 pointer-events-none" aria-hidden="true">
-                    <Image 
-                    className={styles.blobImage}
-                    height="10000%"
-                    width="10000%"
-                    src="/betterblueblob.png"
-                    alt="test"
-                    />
-                </div>
-            <div className='relative z-10'>
+
             <p className="text-lg">
-              Stem-POTD is a program to overshadow the satellite project taking place at Poolesville High School.
+            Our team consists of 3 students from the Science, Math, Computer Science magnet program at Poolesville High School. Each of us still hold unique skill sets, with some being perfected outside the realm of the classroom:
+            
             </p>
-            </div>
+            <ul>
+              <li className="text-lg">Eric has extensive experience in the fields of business and marketing through his qualification and involvement in interdisciplinary business competitions such as International DECA</li>
+              <li className="text-lg">Agneya has significant experience in computer science and research, notably through his involvement in programming machine learning models and web applications</li>
+              <li className="text-lg">Veronica has vast experience in research and project management through her leadership in multiple STEM-based clubs and research projects such as by leading her school’s portion of a county-wide high school satellite initiative</li>
+            </ul>
+
+            <p className="text-lg pt-3">With family in heavily polluted areas (India and China), we could not bear to see the degradation of our world, thus motivating us to make an impact on the current climate situation.</p>
           </div>
+
         </div>
-        <div className="mt-20 mb-6 sm:mt-8 sm:mb-4">
-          <StyledTextV2Small text="Operation"/>
+        {/* <div className="mt-20 mb-6 sm:mt-8 sm:mb-4">
+          <StyledTextV2Small text="Operation" />
           <div className="mt-6">
             <p className="text-lg">
-              We hold meetings every friday either online or at the Rockville Library. 
+              We hold meetings every friday either online or at the Rockville Library.
             </p>
           </div>
-        </div>
-        { isDesktop ? (
-          <div className="absolute opacity-70 transform translate-x-1/4 -translate-y-1/4 pointer-events-none" aria-hidden="true">
-              <Image 
-              className={styles.blobImage}
-              height="10000%"
-              width="10000%"
-              src="/betterblueblob.png"
-              alt="test"
-              />
-          </div>
-          ) : (
-            <div/>
-          )}
-          
-            <div className='relative z-10'>
-              <BasicGridImages />
-            </div>
+        </div> */}
+        
+
+        {/* <div className='relative z-10'>
+          <BasicGridImages />
+        </div> */}
       </section>
+
     </Screen>
   );
 }

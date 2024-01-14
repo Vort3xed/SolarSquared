@@ -1,15 +1,16 @@
 import Head from 'next/head';
 import StyledTextV2Small from '@/components/StyledTextV2Small/StyledTextV2';
 import Screen from '../components/screen/Screen';
+import Renderer from '../components/3DRenderer/Renderer';
 import TeamCard from '../components/teams/TeamCard';
-import Styles from '../components/teams/Team.module.css';
+import Styles from '../components/3DRenderer/renderer.module.css';
 import { Leads } from '../lib/data/TeamData';
 
 function Teams() {
   return (
     <Screen>
       <Head>
-        <title>Our Team</title>
+        <title>Our Product</title>
         <meta
           name="description"
           content="Leardership team of SolarSquared"
@@ -21,23 +22,16 @@ function Teams() {
       </Head>
       <section className="mt-16 mb-12 container-70">
         <div className="my-16 w-full text-center">
-          <StyledTextV2Small text="Our Team" />
+          <StyledTextV2Small text="Our Product" />
         </div>
-        <h2 className={Styles.postHead}>Leads</h2>
-        <div className={Styles.cardContainer}>
-          {Leads.slice(0, 20).map((item, index) => {
-            return (
-              <TeamCard
-                key={`${String(index)}-team`}
-                name={item.name}
-                title={item.title}
-                imageSrc={`/teams/${item.imageSrc}`}
-                lazyImageSrc={`/teams/${item.imageSrc}`}
-                socials={item.socials}
-              />
-            );
-          })}
+        
+        <div className={Styles.card}>
+        <div className="z-10 w-full text-center h-2/3 mb-18 mt-4 overflow-hidden rounded-lg">
+            <Renderer />
+          </div>
         </div>
+
+
       </section>
     </Screen>
   );

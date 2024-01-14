@@ -9,6 +9,7 @@ import Sponsors from '../components/sponsors/Sponsors';
 import Screen from '../components/screen/Screen';
 import HomeAbout from '../components/homeAbout/HomeAbout';
 import BetterHero from '@/components/BetterHero/BetterHero';
+import VideoHero from '@/components/VideoHero/VideoHero';
 
 export default function Home() {
   const [isDesktop, setDesktop] = useState(false);
@@ -48,7 +49,9 @@ export default function Home() {
       <BetterHero />
       <HomeAbout />
       <TechStackV2 />
-      <Sponsors />
+      {/* <Sponsors /> */}
+      <VideoHero />
+
     </Screen>
   );
 }
