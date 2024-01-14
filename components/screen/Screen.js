@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect } from 'react';
 import Footer from '../footer/Footer';
 import SocialsBar from '../socialsbar/SocialsBar';

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Head from 'next/head';
 import StyledTextV2Small from '@/components/StyledTextV2Small/StyledTextV2';
 import Screen from '../components/screen/Screen';

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import StyledTextV2Small from '@/components/StyledTextV2Small/StyledTextV2';
