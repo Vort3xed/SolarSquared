@@ -59,17 +59,8 @@ function Footer() {
         </div>
         <div className="flex-4 md:flex-1 sm:mt-8">
           <h3 className="text-2xl">Get Help</h3>
-          <a
-            href="https://docs.google.com/forms/"
-            className="block pl-1 text-lg my-1 font-extralight"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Join Us
-          </a>
-          <Link href="/faqs">
-            <a className="block pl-1 text-lg my-1 font-extralight">FAQs</a>
-          </Link>
+          
+          
           <Link href="/contact">
             <a className="pl-1 block text-lg my-1 font-extralight">
               Contact Us
@@ -84,7 +75,7 @@ function Footer() {
           reserved.
         </h6>
         <h6 className="flex items-center">
-          Crafted with&nbsp;<span className="text-2xl">♥</span>&nbsp;by Agneya Tharun
+          Crafted with&nbsp;<span className="text-2xl">♥</span>&nbsp;by AVE
         </h6>
         
       </div>

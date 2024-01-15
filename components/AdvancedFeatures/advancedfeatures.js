@@ -56,20 +56,34 @@ function AdvFeatures() {
 
   return (
     <>
+    <section className="py-10 sm:py-20">
+        <div className="text-center pb-12 md:pb-16">
+            <StyledTextV2Small text="CSF Manufacturing" />
+        </div>
+        <div className="py-10 sm:py-20 rounded-lg bg-5eece1 p-2">
+          {TimelineData.reverse().map((item, index) => (
+            // eslint-disable-next-line
+            <Card key={index} index={index} data={item} length={TimelineData.length} />
+          ))}
+        </div>
+      </section>
       <section
         ref={targetRef}
         className="flex h-[500vh] flex-col items-center justify-start"
       >
+        <div className="text-center pb-12 md:pb-16">
+            <StyledTextV2Small text="Panel Manufacturing" />
+        </div>
         <div className="sticky top-[16.7vh] h-[66.8vh] px-16 text-2xl leading-[1] text-white [&_p]:w-[45rem] [&_p]:max-w-[90%]">
           <motion.div style={{ x, scale }} className="relative h-full">
             <motion.figure style={{ opacity }} className="h-full">
-            <img className="h-full w-auto" src="/gallery/gallery1.jpg" alt="compteam" />
+            <img className="h-full w-auto" src="/gallery/step1.jpg" alt="process" />
             </motion.figure>
             <motion.figure style={{ opacity: text2Opacity }}>
-            <img className="absolute inset-0 h-full w-auto" src="/gallery/gallery1.jpg" alt="compteam" />
+            <img className="absolute inset-0 h-full w-auto" src="/gallery/step2.jpg" alt="process" />
             </motion.figure>
             <motion.figure style={{ opacity: text3Opacity }}>
-            <img className="absolute inset-0 h-full w-auto" src="/gallery/gallery1.jpg" alt="compteam" />
+            <img className="absolute inset-0 h-full w-auto" src="/gallery/step3.jpg" alt="process" />
             </motion.figure>
           </motion.div>
           <motion.p
@@ -79,12 +93,9 @@ function AdvFeatures() {
             })}
             className="translate-y-centered-offset absolute top-1/2 left-0"
           >
-            {/* <span className="text-primary">Preconfigured environments</span>
-            <br />
-            We detect your environment so you don't need to fiddle with
-            configuration files. */}
-            <h1>Phase 1</h1>
-            <p>Design, Plan, Delegate, Calculate</p>
+            <b><h1>Step 1</h1></b>
+            <p className="pt-2 grid grid-cols-2">A glass or nylon base is fed through a conveyor belt, where multiple layers will be placed on the base.</p>
+            <p className="pt-2 grid grid-cols-2">A transparent conductor and electron transport material, containing silver nanowire to serve as one side of the electrode, is added.</p>
           </motion.p>
           <motion.p
             style={stylesWithCssVar({
@@ -93,11 +104,8 @@ function AdvFeatures() {
             })}
             className="translate-y-centered-offset absolute top-1/2 left-0"
           >
-            {/* <span className="text-primary">Command Palette</span>
-            <br />
-            Access and complete any action in seconds with the command palette. */}
-            <h1>Phase 2</h1>
-            <p>Research, Build, Program</p>
+            <b><h1>Step 2</h1></b>
+            <p className="pt-2 grid grid-cols-2">A laser etching device forms precise silver nanowire patterns to ensure that short circuiting cannot occur within the device.</p>
           </motion.p>
           <motion.p
             style={stylesWithCssVar({
@@ -106,27 +114,13 @@ function AdvFeatures() {
             })}
             className="translate-y-centered-offset absolute top-1/2 left-0"
           >
-            {/* <span className="text-primary">Devtools</span>
-            <br />
-            We've bundled useful tools to help you get your work done faster and
-            more efficiently. */}
-            <h1>Phase 3</h1>
-            <p>Finalize, Test, Launch</p>
+            <b><h1>Step 3</h1></b>
+            <p className="pt-2 grid grid-cols-3">Lastly, the CSF is printed on top of the electron transport layer and the hole transport layer is layered on top of the CSF.</p>
+            <p className="pt-2 grid grid-cols-3">The cell is completed by mounting another silver nanowire coating on top.</p>
           </motion.p>
         </div>
       </section>
 
-      <section className="py-10 sm:py-20">
-        <div className="text-center pb-12 md:pb-16">
-            <StyledTextV2Small text="Project Timeline" />
-        </div>
-        <div className="py-10 sm:py-20 rounded-lg bg-5eece1 p-2">
-          {TimelineData.reverse().map((item, index) => (
-            // eslint-disable-next-line
-            <Card key={index} index={index} data={item} length={TimelineData.length} />
-          ))}
-        </div>
-      </section>
     </>
   );
 }

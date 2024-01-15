@@ -30,17 +30,17 @@ function Card({ data, length, index }) {
           {data.subtitle.split(" ")[0]}
         </div>
         <div className="flex flex-col justify-center items-center">
-          <span className="rounded-full ring-1 w-3 h-3 ring-offset-darkBluePrimary ring-offset-4 ring-cyanPrimary mx-4 sm:mx-7" />
+          <span className="rounded-full ring-1 w-3 h-3 ring-offset-redPrimary ring-offset-4 ring-redPrimary mx-4 sm:mx-7" />
           <span
             className={`${
               index === length - 1 ? "hidden" : "block"
-            } border-dashed border-l-2 h-24 my-3 border-cyanPrimary`}
+            } border-dashed border-l-2 h-24 my-3 border-redPrimary`}
            />
         </div>
         <div
-          className="flex flex-row justify-start items-center rounded-lg bg-EEEEEE p-2 relative bg-cyanPrimary/5 py-3 pl-3 pr-5 w-[30rem] sm:w-[20rem]"
+          className="flex flex-row justify-start items-center rounded-lg bg-EEEEEE p-2 relative bg-redPrimary/5 py-3 pl-3 pr-5 w-[30rem] sm:w-[20rem]"
         >
-          <div className="bg-cyanPrimary/90 w-8 sm:w-12 h-8 sm:h-12 rounded-full flex justify-center items-center">
+          <div className="bg-redPrimary/90 w-8 sm:w-12 h-8 sm:h-12 rounded-full flex justify-center items-center">
             <i className={`${data.icon} text-lg sm:text-2xl`} />
           </div>
           <div className="">

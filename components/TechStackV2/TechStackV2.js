@@ -49,25 +49,31 @@ function Element1() {
       </div>
       <div className={`${Styles.col} ${Styles.col60} `}>
         <div className={Styles.headDescription}>
-          Solar panels are a good start. But they're hard to produce, and lack efficiency.
+          Solar panels are a good start. But they're hard to produce and lack efficiency.
         </div>
         <div className={Styles.contentContainer}>
           <div className={`${Styles.content}`} data-aos="zoom-y-out" data-aos-delay="300">
             <h2>Fail Point #1:</h2>
             <p>
-              Solar Panels use silicon semiconductors, which is a high demand resource that significantly contributes to the high cost of solar panels.
+              Solar panels use silicon semiconductors, which are a highly demanded resource that significantly contribute to the cost of solar panels.
             </p>
           </div>
           <div className={Styles.content} data-aos="zoom-y-out" data-aos-delay="500">
             <h2>Fail Point #2:</h2>
             <p>
-              Solar panels lack versatility and are not as efficient as they could be.
+              Solar panels lack versatility because of their size, weight, and opacity.
             </p>
           </div>
           <div className={Styles.content} data-aos="zoom-y-out" data-aos-delay="500">
             <h2>Fail Point #3:</h2>
             <p>
-              Since silicon requires a very high temperature to be refined, the carbon footprint of normal solar panels is very high.
+              The carbon footprint of producing traditional solar panels is high due to the energy expenditure of reaching high temperatures during refinement.
+            </p>
+          </div>
+          <div className={Styles.content} data-aos="zoom-y-out" data-aos-delay="500">
+            <h2>Fail Point #4:</h2>
+            <p>
+              Industry standard solar panels are not efficient and require a large surface area to produce a significant amount of power.
             </p>
           </div>
 
@@ -122,14 +128,14 @@ function Element2() {
         <div className={`${Styles.col} ${Styles.col60}`}>
           {/* <SlidingComponent direction="right"> */}
           <div className={Styles.headDescription}>
-            Scrap the silicon, drop the weight, and up the efficiency. Congratulations, you have our product.
+            Scrap the silicon, drop the weight, and raise the efficiency. Congratulations, you have our product.
           </div>
           {/* </SlidingComponent> */}
           <div className={Styles.contentContainer}>
             <div className={Styles.content} data-aos="zoom-y-out" data-aos-delay="500">
               <h2>Price</h2>
               <p>
-                Silicon requires temperatures upto 2000 degrees celsius to be refined. Our product uses perovskite crystals, which can be refined at only 80 degrees celsius.
+                Silicon requires temperatures around 2000 degrees celsius to be refined. Our product uses perovskite crystals, which can be refined at only 80 degrees celsius.
               </p>
             </div>
             <div className={Styles.content} data-aos="zoom-y-out" data-aos-delay="600">
@@ -139,7 +145,7 @@ function Element2() {
               </p>
             </div>
             <div className={Styles.content} data-aos="zoom-y-out" data-aos-delay="600">
-              <h2>Place</h2>
+              <h2>Payload</h2>
               <p>
                 Regular solar panels are heavy and bulky. Our product, sitting at only 30 microns thick, is significantly lighter than the industry standard.
               </p>

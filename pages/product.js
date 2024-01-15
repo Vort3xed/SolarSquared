@@ -6,6 +6,7 @@ import Renderer from '../components/3DRenderer/Renderer';
 import TeamCard from '../components/teams/TeamCard';
 import Styles from '../components/3DRenderer/renderer.module.css';
 import { Leads } from '../lib/data/TeamData';
+import AdvFeatures from '@/components/AdvancedFeatures/advancedfeatures';
 
 function Teams() {
   return (
@@ -31,9 +32,8 @@ function Teams() {
             <Renderer />
           </div>
         </div>
-
-
       </section>
+      <AdvFeatures />
     </Screen>
   );
 }
