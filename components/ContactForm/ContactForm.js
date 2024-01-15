@@ -40,7 +40,9 @@ export default function Contact() {
 
     return (
         <>
-        <ToastContainer />
+        {typeof window !== 'undefined' && (
+                <ToastContainer />
+            )}
             <section className="container-70 overflow-hidden p-4">
                 <div className='grid grid-cols-1 gap-2'>
                     <form onSubmit={handleSubmit}>
