@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import Footer from '../footer/Footer';
 import SocialsBar from '../socialsbar/SocialsBar';
 import Navbar2 from '../navbar2/Navbar2';
-import { Analytics } from '@vercel/analytics/react';
 
 function Screen({ children }) {
   useEffect(() => {
@@ -27,7 +26,7 @@ function Screen({ children }) {
         <Navbar2/>
       </div>
       {children}
-      <Analytics />
+      
       <Footer />
     </main>
   );

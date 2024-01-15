@@ -1,4 +1,6 @@
+/* eslint-disable */
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/react';
 import '../styles/global.css';
 
 export default function MyApp({ Component, pageProps }) {
@@ -13,6 +15,7 @@ export default function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
