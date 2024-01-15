@@ -93,7 +93,7 @@ function AdvFeatures() {
             })}
             className="translate-y-centered-offset absolute top-1/2 left-0"
           >
-            <b><h1>Step 1</h1></b>
+            <b><h1>Step 1:</h1></b>
             <p className="pt-2 grid grid-cols-2">A glass or nylon base is fed through a conveyor belt, where multiple layers will be placed on the base.</p>
             <p className="pt-2 grid grid-cols-2">A transparent conductor and electron transport material, containing silver nanowire to serve as one side of the electrode, is added.</p>
           </motion.p>
@@ -104,7 +104,7 @@ function AdvFeatures() {
             })}
             className="translate-y-centered-offset absolute top-1/2 left-0"
           >
-            <b><h1>Step 2</h1></b>
+            <b><h1>Step 2:</h1></b>
             <p className="pt-2 grid grid-cols-2">A laser etching device forms precise silver nanowire patterns to ensure that short circuiting cannot occur within the device.</p>
           </motion.p>
           <motion.p
@@ -114,7 +114,7 @@ function AdvFeatures() {
             })}
             className="translate-y-centered-offset absolute top-1/2 left-0"
           >
-            <b><h1>Step 3</h1></b>
+            <b><h1>Step 3:</h1></b>
             <p className="pt-2 grid grid-cols-3">Lastly, the CSF is printed on top of the electron transport layer and the hole transport layer is layered on top of the CSF.</p>
             <p className="pt-2 grid grid-cols-3">The cell is completed by mounting another silver nanowire coating on top.</p>
           </motion.p>
