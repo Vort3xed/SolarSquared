@@ -53,8 +53,8 @@ function Footer() {
           <Link href="/teams">
             <a className="pl-1 block text-lg my-1 font-extralight">Team</a>
           </Link>
-          <Link href="/events">
-            <a className="pl-1 block text-lg my-1 font-extralight">Events</a>
+          <Link href="/product">
+            <a className="pl-1 block text-lg my-1 font-extralight">Product</a>
           </Link>
         </div>
         <div className="flex-4 md:flex-1 sm:mt-8">

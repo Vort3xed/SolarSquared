@@ -35,12 +35,12 @@ export default function Contact() {
 
             console.log(result);
         }
-        
+
     }
 
     return (
         <>
-        {typeof window !== 'undefined' && (
+            {typeof window !== 'undefined' && (
                 <ToastContainer />
             )}
             <section className="container-70 overflow-hidden p-4">
