@@ -4,14 +4,13 @@ import { CgClose } from 'react-icons/cg';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Hamburger.module.css';
-import Logo from '../../assets/logo.png';
-import Button from '../button/Button';
+import Logo3 from '../../assets/nobgsolarsquared.png';
 
-const SpanStyle = {
-  zIndex: 1,
-  color: 'inherit',
-  transition: 'all 300ms ease-in-out',
-};
+// const SpanStyle = {
+//   zIndex: 1,
+//   color: 'inherit',
+//   transition: 'all 300ms ease-in-out',
+// };
 
 function Sidebar({ isMounted, unmount }) {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -60,7 +59,7 @@ function Sidebar({ isMounted, unmount }) {
         <div>
           <Link href="/">
             <a className="flex items-center" onClick={unmount}>
-              <Image src={Logo} alt="compteam" height="60px" width="60px" />
+              <Image src={Logo3} alt="compteam" height="60px" width="60px" />
             </a>
           </Link>
         </div>
@@ -95,29 +94,13 @@ function Sidebar({ isMounted, unmount }) {
             Product
           </a>
         </Link>
-        <Link href="/faqs">
-          <a className={styles.navLink} onClick={unmount}>
-            FAQs
-          </a>
-        </Link>
+        
         <Link href="/contact">
           <a className={styles.navLink} onClick={unmount}>
             Contact Us
           </a>
         </Link>
-        <a
-          href="https://docs.google.com/forms/"
-          target="_blank"
-          className="flex rounded-full"
-          rel="noreferrer"
-        >
-          <Button
-            style={{ border: 'none' }}
-            className="bg-primary-light text-primary hover:text-primary-light xs:!py-3"
-          >
-            <span style={SpanStyle}>Join Us</span>
-          </Button>
-        </a>
+        
       </div>
     </section>,
     document.getElementById('overlay')

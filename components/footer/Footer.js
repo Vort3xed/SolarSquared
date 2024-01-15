@@ -37,13 +37,13 @@ function Footer() {
               <a href="mailto:ave.engineering1@gmail.com">ave.engineering1@gmail.com</a>
             </h4>
           </div>
-          <div className="my-3 flex flex-col">
+          {/* <div className="my-3 flex flex-col">
             <h3 className="text-2xl">Social Media</h3>
             <h4 className="text-lg font-extralight">
               <a href="https://www.instagram.com/avengineering/" target="_blank" rel='noreferrer'>www.instagram.com/avengineering/</a> <br />
               <a href="https://github.com/avengineering" target="_blank" rel='noreferrer'>github.com/avengineering</a> <br />
             </h4>
-          </div>
+          </div> */}
         </div>
         <div className="flex-4 md:flex-1 md:mx-4 sm:mx-0 sm:mt-8">
           <h3 className="text-2xl">Other Pages</h3>

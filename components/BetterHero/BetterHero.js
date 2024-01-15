@@ -61,7 +61,7 @@ export default function BetterHero() {
                         </div>
                     </div>
                     ) : ( */}
-                        <div className='relative z-10'> 
+                        <div> 
                             <VerticalSlider direction="down">
                                 <StyledTextSuperSmallV2 text="SolarSquared" />
                             </VerticalSlider>

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import styles from './Navbar2.module.css';
 import Logo from '../../assets/SolarSquared.png';
 import Logo2 from '../../assets/basiclogo.png';
+import Logo3 from '../../assets/nobgsolarsquared.png';
 import ButtonV2 from '../buttonv2/ButtonV2';
 import Sidebar from './Sidebar';
 
@@ -31,7 +32,7 @@ function Navbar2() {
     const handleScroll = () => {
       const navList = document.getElementById('navList');
       const navbar = document.getElementById('navbar');
-      const title = document.getElementById('clubtitle');
+      // const title = document.getElementById('clubtitle');
       const height = navbar.offsetHeight;
 
       const currentScrollPos = window.pageYOffset;
@@ -41,13 +42,19 @@ function Navbar2() {
         navbar.style.border = 'none';
       }
 
-      if (prevScroll < currentScrollPos) {
-        // navList.classList.add('fade-up');
-        // title.classList.add('fade-up');
-        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.2)';
-      } else {
-        // navList.classList.remove('fade-up');
-        // title.classList.remove('fade-up');
+
+      if (navList) {
+        if (prevScroll < currentScrollPos) {
+          // console.log('HA Adding fade-up classes');
+          // navList.classList.add('fade-up');
+          // title.classList.add('fade-up');
+          // navbar.classList.add('fade-up');
+          // navbar.style.borderBottom = '3px solid rgba(255, 255, 255, 1)';
+        } else {
+          // navList.classList.remove('fade-up');
+          // title.classList.remove('fade-up');
+          // navbar.classList.remove('fade-up');
+        }
       }
 
       prevScroll = currentScrollPos;
@@ -63,7 +70,7 @@ function Navbar2() {
         <Link href="/">
           <a className="flex items-center">
             {/* <Image src={Logo} alt="compteam" height="60px" width="120px"/> */}
-            <Image src={Logo2} alt="compteam" height="60px" width="60px"/>
+            <Image src={Logo3} alt="solarsquared" height="60px" width="60px"/>
             {/* <h2 id="clubtitle" className={styles.navTitle}>
               SolarSquared
             </h2> */}
@@ -82,9 +89,6 @@ function Navbar2() {
         </Link>
         <Link href="/product">
           <a className={styles.navLink}>PRODUCT</a>
-        </Link>
-        <Link href="/faqs">
-          <a className={styles.navLink}>FAQs</a>
         </Link>
         <Link href="/contact">
           <a className={styles.navLink}>CONTACT US</a>

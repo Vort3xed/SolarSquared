@@ -52,13 +52,16 @@ function HomeAbout() {
         </p>
       </div>
       
-      <Link href="/teams">
-        <a className="flex w-[fit-content] rounded-full">
-          <ButtonV2 data-aos="zoom-y-out" data-aos-delay="300">
+        {/* <a href="/teams" className="flex w-[fit-content] rounded-full">
+          <ButtonV2 data-aos="zoom-y-out" data-aos-delay="600">
             <span className="z-50 block">Our Team</span>
           </ButtonV2>
-        </a>
-      </Link>
+        </a> */}
+        <a href='/teams'>
+              <ButtonV2>
+                <span className="flex items-center"> Our Team </span>
+              </ButtonV2>
+            </a>
       </div>
       </div>
     </section>

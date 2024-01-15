@@ -142,6 +142,17 @@ a {
   visibility: hidden;
 }
 
+/* .fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+} */
+
+.navbar-on-top {
+  z-index: 1000; /* Adjust the value as needed */
+  position: static;
+}
+
 /* .cursor {
   background: #EFAE04;
   background-image: url('/affiliates/cyberlab.jpg');

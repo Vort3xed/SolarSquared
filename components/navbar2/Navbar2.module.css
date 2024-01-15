@@ -1,17 +1,17 @@
 .navbar {
-  @apply sticky top-0 left-0 right-0 w-full py-2 px-20 flex justify-between items-center overflow-hidden z-[100];
+  @apply fixed top-0 left-0 right-0 w-full py-2 px-20 flex justify-between items-center overflow-hidden z-[100];
   @apply 2xl:px-10;
   @apply xl:px-8;
   @apply sm:px-6;
   @apply xs:px-3;
-  background-color: #efae04ff;
+  /* background-color: #efae04ff; */
   backdrop-filter: blur(8px);
   /* background-image: linear-gradient(to top left,hsl(180, 90%, 55%),hsl(219, 69%, 43%)); */
 }
 
 .navTitle {
   transition: all 400ms ease-in-out;
-  color: #ffffff;
+  color: #000000;
   @apply ml-6 text-xl xl:hidden;
 }
 
@@ -21,6 +21,7 @@
   @apply 2xl:gap-10;
   @apply xl:gap-4;
   @apply lg:hidden;
+  color:hsl(39, 100%, 47%);
 }
 
 .navbarList > .navLink {
@@ -30,7 +31,7 @@
 }
 .navbarList > .navLink:hover {
   @apply font-medium;
-  color: #ffffff;
+  color: hsl(39, 100%, 33%);
 }
 
 .humburgerMenu {

@@ -5,7 +5,6 @@ import StyledTextV2Small from '@/components/StyledTextV2Small/StyledTextV2';
 import BasicGridImages from '@/components/gridGallery/BasicGridImages';
 import Image from 'next/image';
 import Screen from '../components/screen/Screen';
-import styles from './blob.module.css'
 
 function About() {
   const [isDesktop, setDesktop] = useState(false);
