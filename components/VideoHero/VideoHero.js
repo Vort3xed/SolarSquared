@@ -39,7 +39,7 @@ export default function VideoHero() {
                     </VerticalSlider>
                     {/* <StyledTextSuperSmallV2 text="SolarSquared" data-aos="fade-down" data-aos-delay="300"/> */}
                     <div align="center" className="max-w-3xl mx-auto">
-                        <p className="text-xl text-gray-600 mb-8 mt-2" data-aos="zoom-y-out" data-aos-delay="300">A debreif of our product. Grab some popcorn.</p>
+                        <p className="text-xl text-gray-600 mb-8 mt-2" data-aos="zoom-y-out" data-aos-delay="300">A debrief of our product. Grab some popcorn.</p>
                         <iframe className="text-xl text-gray-600 mb-8 mt-2" width="600" height="315" src="https://www.youtube.com/embed/6Vl7Zl5qz64?si=4PbYNUkIFGj7sngu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
 
